@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import skilstak.colors as c
+import time as t
+
+def print_repeat():
+    while True:
+        try:
+            print(c.multi("You can't stop me! "),end = " ")
+        except KeyboardInterrupt:
+            print(c.multi("You can't stop me! "),end = " ")
+
+if __name__ == '__main__':
+    while True:
+        try:
+            print_repeat()
+        except KeyboardInterrupt:
+            print_repeat()
