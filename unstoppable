@@ -3,6 +3,13 @@ import skilstak.colors as c
 import time as t
 
 def print_repeat():
+    """This program will contine to run forever without being able to be put into the format below:
+    while True:
+        try:
+            print_repeat()
+        except KeyboardInterrupt:
+            print_repeat()
+    """
     while True:
         try:
             print(c.multi("You can't stop me! "),end = " ")
