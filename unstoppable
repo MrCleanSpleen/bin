@@ -3,7 +3,7 @@ import skilstak.colors as c
 import time as t
 
 def print_repeat():
-    """This program will contine to run forever without being able to be put into the format below:
+    """This program will contine to run forever without being able to be stopped when put into the format below:
     while True:
         try:
             print_repeat()
