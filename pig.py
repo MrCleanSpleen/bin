@@ -2,7 +2,8 @@
 import skilstak.colors as c
 import time
 
-if __name__ == "__main__":
+def translate_pig():
     print("What word would you like to translate into pig latin?")
     word = input(">>> ")
+
 
