@@ -4,7 +4,4 @@ import time as t
 import json
 import os
 if __name__ == '__main__':
-    os.system("vi file.json")
-    os.system("i")
-    os.system("test")
-    
+    os.system("touch file.json")
