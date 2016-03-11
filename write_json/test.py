@@ -25,9 +25,5 @@ def write_json():
     
     json = name + ".json"
     with open(json, "w+") as f:
-        pass
-    out_file = open(json,"w")    
-    json.dump(data,out_file, indent=4)
-
-    
-    
+        out_file = open(json,"w")    
+        json.dump(data,out_file, indent=4)
