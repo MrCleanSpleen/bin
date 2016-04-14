@@ -2,19 +2,16 @@ package main
 
 import (
 	"fmt"
+	c "github.com/skilstak/go-colors"
 	i "github.com/skilstak/go-input"
 	"strings"
 )
+
 func CapString(input string) string {
 	words := strings.Fields(input)
-	smallwords := " a an on the to "
 
 	for index, word := range words {
-		if strings.Contains(smallwords, " "+word+" ") {
-			words[index] = word
-		} else {
-			words[index] = strings.Title(word)
-		}
+		words[index] = strings.Title(word)
 	}
 	return strings.Join(words, " ")
 }
@@ -30,10 +27,19 @@ func StripChars(str, chr string) string {
 
 func main() {
 	name := i.Ask("Please put in your name: ")
-	if name strings.ContainsAny("_") {
+	if strings.ContainsAny(name, "_") {
 		strings.Replace(name, "_", " ", -1)
-		stripchars(name, "~!@#$%^&*() <>.,?/|}{[]:;"))
+		fmt.Println(StripChars(name, ```~!@#$%^&*()<>.,?/|}{[]:;-"'+=```))
+		fmt.Println(c.CL)
 		CapString(name)
+		fmt.Println(StripChars(name, " "))
+	} else if strings.ContainsAny(name, "-") {
+		strings.Replace(name, "-", " ", -1)
+		fmt.Println(StripChars(name, ```~!@#$%^&*()<>.,?/|}{[]:;_"'+=```))
+		fmt.Println(c.CL)
+		CapString(name)
+		fmt.Println(StripChars(name, " "))
+	} else {
+		fmt.Println(StripChars(name, ```~!@#$%^&*()<>.,?/|}{[]:;_- +="'```))
 	}
- 
 }
