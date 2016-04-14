@@ -29,17 +29,17 @@ func main() {
 	name := i.Ask("Please put in your name: ")
 	if strings.ContainsAny(name, "_") {
 		strings.Replace(name, "_", " ", -1)
-		fmt.Println(StripChars(name, ```~!@#$%^&*()<>.,?/|}{[]:;-"'+=```))
+		fmt.Println(StripChars(name, "~!@#$%^&*()<>.,?/|}{[]:;-'+="))
 		fmt.Println(c.CL)
 		CapString(name)
-		fmt.Println(StripChars(name, " "))
+		fmt.Println(name)
 	} else if strings.ContainsAny(name, "-") {
 		strings.Replace(name, "-", " ", -1)
-		fmt.Println(StripChars(name, ```~!@#$%^&*()<>.,?/|}{[]:;_"'+=```))
+		fmt.Println(StripChars(name, "~!@#$%^&*()<>.,?/|}{[]:;_'+="))
 		fmt.Println(c.CL)
 		CapString(name)
-		fmt.Println(StripChars(name, " "))
+		fmt.Println(name)
 	} else {
-		fmt.Println(StripChars(name, ```~!@#$%^&*()<>.,?/|}{[]:;_- +="'```))
+		fmt.Println(StripChars(name, "~!@#$%^&*()<>.,?/|}{[]:;_- +='"))
 	}
 }
