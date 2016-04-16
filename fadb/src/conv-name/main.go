@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	c "github.com/skilstak/go-colors"
+	//c "github.com/skilstak/go-colors"
 	i "github.com/skilstak/go-input"
 	"strings"
 )
@@ -28,17 +28,17 @@ func StripChars(str, chr string) string {
 func main() {
 	name := i.Ask("Please put in your name: ")
 	if strings.ContainsAny(name, "_") {
-		strings.Replace(name, "_", " ", -1)
-		fmt.Println(StripChars(name, "~!@#$%^&*()<>.,?/|}{[]:;-'+="))
-		fmt.Println(c.CL)
-		CapString(name)
-		fmt.Println(name)
+		name1 := StripChars(name, "~!@#$%^&*()<>.,?/|}{[]:;-'+=")
+		name2 := strings.Replace(name1, "_", " ", -1)
+		name3 := CapString(name2)
+		name4 := StripChars(name3, " ")
+		fmt.Println(name4)
 	} else if strings.ContainsAny(name, "-") {
-		strings.Replace(name, "-", " ", -1)
-		fmt.Println(StripChars(name, "~!@#$%^&*()<>.,?/|}{[]:;_'+="))
-		fmt.Println(c.CL)
-		CapString(name)
-		fmt.Println(name)
+		name1 := StripChars(name, "~!@#$%^&*()<>.,?/|}{[]:;_'+=")
+		name2 := strings.Replace(name1, "-", " ", -1)
+		name3 := CapString(name2)
+		name4 := StripChars(name3, " ")
+		fmt.Println(name4)
 	} else {
 		fmt.Println(StripChars(name, "~!@#$%^&*()<>.,?/|}{[]:;_- +='"))
 	}
