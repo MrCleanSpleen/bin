@@ -27,16 +27,17 @@ func stripchars(str, chr string) string {
 	}, str)
 }
 func remove(str, chr string) string {
-	reg, err := regexp.Compile("[^A-Za-z0-9]+")
+	reg, err := regexp.Compile("[^A-Za-z0-9_-]+")
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	safe := reg.ReplaceAllString(str, "")
+	return safe
 }
 func main() {
 	name := i.Ask("Please put in your name: ")
 	if strings.ContainsAny(name, "_") {
-		name1 := remove(name, "")
+		name1 := remove(name, " ")
 		name2 := strings.Replace(name1, "_", " ", -1)
 		name3 := capstring(name2)
 		name4 := stripchars(name3, " ")
