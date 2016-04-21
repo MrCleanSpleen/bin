@@ -2,7 +2,6 @@ package nameconv
 
 import (
 	"fmt"
-	i "github.com/skilstak/go-input"
 	"log"
 	"regexp"
 	"strings"
