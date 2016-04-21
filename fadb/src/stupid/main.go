@@ -1,10 +1,10 @@
 package main
 
 import (
+	"file"
 	"fmt"
-	"nameconv"
 )
 
 func main() {
-	nameconv.NameConv("name_test")
+	file.NameConv("name_blah")
 }
