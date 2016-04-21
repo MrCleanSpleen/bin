@@ -2,7 +2,6 @@ package nameconv
 
 import (
 	"fmt"
-	//c "github.com/skilstak/go-colors"
 	i "github.com/skilstak/go-input"
 	"log"
 	"regexp"
