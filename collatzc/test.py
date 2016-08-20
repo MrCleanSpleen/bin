@@ -1,5 +1,3 @@
-import math as m
-
 def find_collatz(x):
     seq = [x]
     while seq[-1] > 1:
