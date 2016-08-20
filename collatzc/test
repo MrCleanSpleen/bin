@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+import test as t
+
+print("What number would you like to test?")
+number = input(">>> ")
+t.find_collatz()
