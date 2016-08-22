@@ -1,0 +1,3 @@
+# remember, source me don't run me
+export GOPATH=$HOME/repos/bin/newbux
+export PATH=$HOME/repos/bin/newbux/bin:$PATH
