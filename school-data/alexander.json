@@ -1,4 +1,15 @@
 { 
-  "parents": ["Garth Green", "Sharon Green"]
-  "home-phone": 7049877954
+  "guardians": ["Garth Green","Sharon Green"]
+  "home-phone": 0123456789,
+  "guardian1-cell": "none",
+  "guardian2-cell": "none",
+  "medical-info": ["Peanut Allergy","ADHD"]
+  "guardian1-email": "blah@gmail.com",
+  "guardian2-email": "foo@gmail.com",
+  "mother-work": ["Example Company","0987654321"]
+  "father-work": ["Example Company 2", "0987612345"]
+  
+  
+
+
 }
