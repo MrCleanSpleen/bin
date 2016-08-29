@@ -3,11 +3,11 @@
 import json 
 from pprint import pprint
 
-with open('alexander.json') as f:
+with open('1234567.json') as f:
     data = json.load(f)
     f.close()
 
     pprint(data)
-    print("Name: " + data["name"])
-    print("Speed: " + str(data["speed"]))
-    print("Defense : " + str(data["defense"]))
+    print("student name: " + data["student-name"])
+    print("home phone: " + data["home-phone"])
+    print("parents/guardian: " + data["guardians"])
