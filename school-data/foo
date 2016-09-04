@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
-
 import json 
 from pprint import pprint
+with open('1234567.json') as data_file:    
+    data = json.load(data_file)
 
-with open('1234567.json') as f:
-    data = json.load(f)
-    f.close()
-
-    pprint(data)
-    print("student name: " + data["student-name"])
-    print("home phone: " + data["home-phone"])
-    print("parents/guardian: " + data["guardians"])
+pprint(data)
+print("student name: " + data["student-name"])
+print("home phone: " + data["home-phone"])
+print("parents/guardian: " + data["guardians"])
