@@ -1,6 +1,6 @@
 { 
-  "student-name": "Alexander Green",
-  "guardians": ["Garth Green","Sharon Green"]
+  "student-name": "Student McName",
+  "guardians": ["Generic Father","Genric Mother"]
   "home-phone":" 0123456789",
   "guardian1-cell": "none",
   "guardian2-cell": "none",
